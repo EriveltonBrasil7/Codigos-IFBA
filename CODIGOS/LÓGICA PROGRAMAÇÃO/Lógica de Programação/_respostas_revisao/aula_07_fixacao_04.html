@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+		    /*
+        Escrever um algoritmo que peça para o usuário digitar o peso dele em kg, e a altura em metros. Em seguida calcule o IMC do usuário de acordo com a fórmula imc=peso/(altura*altura). Portanto, se o resultado do IMC for menor do que 18.5 o sistema informa ao usuário que ele está ABAIXO do peso ideal. Caso contrário, se o IMC for maior do que 35 o sistema informa que está ACIMA do peso ideal. Caso contrário, se o IMC for maior ou igual a 18.5 e menor ou igual a 35, o sistema informa que está com o peso ideal. 
+        */
+
+        var peso = parseFloat(prompt("Qual o seu peso em kg?"));
+        var altura = parseFloat(prompt("Qual a sua altura em metros?"));
+
+        var imc = peso/(altura*altura);
+
+        if(imc < 18.5){
+          alert("Seu IMC é "+imc+", você está abaixo do peso ideal.");
+        }else if(imc > 35){
+          alert("Seu IMC é "+imc+", você está acima do peso ideal.");
+        }else if(imc >=18.5 && imc<=35){
+          alert("Seu IMC é "+imc+", você está com o peso ideal.");
+        }
+
+
+	</script>
+
+</body>
+</html>

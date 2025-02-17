@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 05</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h2>Calcular o meu IMC online</h2>
+	Tipo:
+	<select id="tipo">
+		<option value="adulto">Adulto</option>
+		<option value="crianca">Criança</option>
+	</select>
+	<br>
+	Altura:<input type="number" id="altura">
+	<br>
+	Peso:<input type="number" id="peso">
+	<br><br>
+	<button onclick="calcularImc()">Calcular IMC</button>
+	<br><br>
+	<div id="resultado"></div>
+
+	<script>
+		
+		function calcularImc(){
+			var altura = parseFloat(document.getElementById("altura").value);
+			var peso = parseFloat(document.getElementById("peso").value);
+			var tipo = document.getElementById("tipo").value;
+			var imc = peso/(altura*altura);
+
+			var mensagem = "";
+			if(tipo == "crianca"){ //Caso criança
+				if(imc < 14.3){
+					mensagem = " - Normal";
+				}else if(imc >= 14.3 && imc <= 16.1){
+					mensagem = " - Sobrepeso";
+				}else if(imc > 16.1){
+					mensagem = " - Obesidade";
+				}
+			}else if(tipo == "adulto"){ //Caso adulto
+				if(imc < 17){
+					mensagem = " - Muito abaixo do peso";
+				}else if(imc >= 17 && imc <= 18.49){
+					mensagem = " - Abaixo do peso";
+				}else if(imc > 18.49){
+					mensagem = " - Normal";
+				}
+			}
+
+
+			document.getElementById("resultado").innerHTML = "Seu IMC é "+imc+mensagem;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 02</title>
+	<meta charset="utf-8">
+</head>
+<h2>Sistema de Lanchonete</h2>
+Produto:
+<select id="opcao">
+	<option value="cq" ="1">Cód. 001 - Cachorro quente - R$ 1,20</option>
+	<option value="bs" ="2">Cód. 002 - Bauru Simples - R$ 1,30</option>
+	<option value="bo" ="3">Cód. 003 - Bauru com ovo - R$ 1,50</option>
+	<option value="h" ="4">Cód. 004 - Hambúrguer - R$ 4,00</option>
+	<option value="ch" ="5">Cód. 005 - Cheeseburger - R$ 4,50</option>
+	<option value="re" ="6">Cód. 006 - Refrigerante - R$ 3,00</option>
+</select><br>
+Quantidade:<input id="valor" type="number">
+<br>
+<button onclick="converter()">Calcular Total à Pagar</button>
+<div id="resultado">valor a pagar</div>
+
+<body>
+	<script>
+		function converter(){
+			var quantidade = document.getElementById("valor").value;
+			var opcaoEscolhida = document.getElementById("opcao").value;
+			var resultado = 0;
+			
+			if (opcaoEscolhida == "cq") {
+				resultado = 1.20*quantidade;
+			}else if(opcaoEscolhida == "bs"){
+				resultado = 1.30*quantidade;
+			}else if(opcaoEscolhida == "bo"){
+				resultado = 1.50*quantidade;	
+			}else if(opcaoEscolhida == "h"){
+				resultado = 4*quantidade;
+			}else if(opcaoEscolhida == "ch"){
+				resultado = 4.50*quantidade;
+			}else if(opcaoEscolhida == "re"){
+				resultado = 3*quantidade;
+			}
+
+			document.getElementById("resultado").innerHTML = "TOTAL à pagar: R$ "+resultado.toFixed(2);
+		}
+	</script>
+</body>
+</html>

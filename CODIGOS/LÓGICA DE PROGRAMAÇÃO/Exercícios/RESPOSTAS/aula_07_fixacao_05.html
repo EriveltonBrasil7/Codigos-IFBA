@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+	/*
+        Crie um programa de uRna eletrônica eleitoral. O programa deve ler apenas 10 votos. Os votos serão destinados apenas para 3 candidatos: se o usuário digitar 13, o voto vai para o candidato Lula. Se o usuário digitar 11, o voto vai para o candidato Bolsonaro. Se o usuário digitar 45, o voto vai para o candidato Rodrigo Maia. Ao final da votação, o programa deve informar os votos que cada candidato obteve, e qual candidato é o novo presidente.
+        */
+
+        var votosLula = 0;
+        var votosBolsonaro = 0;
+        var votosMaia=0;
+        var voto;
+
+        //Eleitor 1
+        voto = parseInt(prompt("Digite para votar: 13-Lula, 11-Bolsonaro, 45-Maia:"));
+        if(voto == 13){
+           votosLula = votosLula + 1;
+        }else if(voto == 11){
+                votosBolsonaro = votosBolsonaro+1;
+        }else if(voto == 45){
+                votosMaia = votosMaia + 1;
+        }
+
+
+        //Eleitor 2
+        voto = parseInt(prompt("Digite para votar: 13-Lula, 11-Bolsonaro, 45-Maia:"));
+        if(voto == 13){
+           votosLula = votosLula + 1;
+        }else if(voto == 11){
+                votosBolsonaro = votosBolsonaro+1;
+        }else if(voto == 45){
+                votosMaia = votosMaia + 1;
+        }
+
+
+        //Eleitor 3
+        voto = parseInt(prompt("Digite para votar: 13-Lula, 11-Bolsonaro, 45-Maia:"));
+        if(voto == 13){
+           votosLula = votosLula + 1;
+        }else if(voto == 11){
+                votosBolsonaro = votosBolsonaro+1;
+        }else if(voto == 45){
+                votosMaia = votosMaia + 1;
+        }
+
+
+        //Eleitor 4
+        voto = parseInt(prompt("Digite para votar: 13-Lula, 11-Bolsonaro, 45-Maia:"));
+        if(voto == 13){
+           votosLula = votosLula + 1;
+        }else if(voto == 11){
+                votosBolsonaro = votosBolsonaro+1;
+        }else if(voto == 45){
+                votosMaia = votosMaia + 1;
+        }
+
+
+        //Eleitor 5
+        voto = parseInt(prompt("Digite para votar: 13-Lula, 11-Bolsonaro, 45-Maia:"));
+        if(voto == 13){
+           votosLula = votosLula + 1;
+        }else if(voto == 11){
+                votosBolsonaro = votosBolsonaro+1;
+        }else if(voto == 45){
+                votosMaia = votosMaia + 1;
+        }
+
+
+        //Eleitor 6
+        voto = parseInt(prompt("Digite para votar: 13-Lula, 11-Bolsonaro, 45-Maia:"));
+        if(voto == 13){
+           votosLula = votosLula + 1;
+        }else if(voto == 11){
+                votosBolsonaro = votosBolsonaro+1;
+        }else if(voto == 45){
+                votosMaia = votosMaia + 1;
+        }
+
+
+        //Eleitor 7
+        voto = parseInt(prompt("Digite para votar: 13-Lula, 11-Bolsonaro, 45-Maia:"));
+        if(voto == 13){
+           votosLula = votosLula + 1;
+        }else if(voto == 11){
+                votosBolsonaro = votosBolsonaro+1;
+        }else if(voto == 45){
+                votosMaia = votosMaia + 1;
+        }
+        
+
+        //Eleitor 8
+        voto = parseInt(prompt("Digite para votar: 13-Lula, 11-Bolsonaro, 45-Maia:"));
+        if(voto == 13){
+           votosLula = votosLula + 1;
+        }else if(voto == 11){
+                votosBolsonaro = votosBolsonaro+1;
+        }else if(voto == 45){
+                votosMaia = votosMaia + 1;
+        }
+
+
+        //Eleitor 9
+        voto = parseInt(prompt("Digite para votar: 13-Lula, 11-Bolsonaro, 45-Maia:"));
+        if(voto == 13){
+           votosLula = votosLula + 1;
+        }else if(voto == 11){
+                votosBolsonaro = votosBolsonaro+1;
+        }else if(voto == 45){
+                votosMaia = votosMaia + 1;
+        }
+
+
+        //Eleitor 10
+        voto = parseInt(prompt("Digite para votar: 13-Lula, 11-Bolsonaro, 45-Maia:"));
+        if(voto == 13){
+           votosLula = votosLula + 1;
+        }else if(voto == 11){
+                votosBolsonaro = votosBolsonaro+1;
+        }else if(voto == 45){
+                votosMaia = votosMaia + 1;
+        }
+
+
+
+
+        //Apuração dos resultados
+        document.write("Apuração dos resultados:");
+        document.write("<br>");
+        document.write("Total de votos Lula:"+votosLula);
+        document.write("<br>");
+        document.write("Total de votos Bolsonaro:"+votosBolsonaro);
+        document.write("<br>");
+        document.write("Total de votos Rodrigo Maia:"+votosMaia);
+        document.write("<br>");
+        document.write("<br>");
+
+        if(votosLula > votosBolsonaro && votosLula>votosMaia){
+                document.write("Lula é o novo presidente!");
+        }else if(votosBolsonaro>votosLula && votosBolsonaro>votosMaia){
+                document.write("Bolsonaro é o novo presidente!");
+        }else if(votosMaia>votosLula && votosMaia>votosBolsonaro){
+                 document.write("Rodrigo Maia é o novo presidente!");       
+        }else if(votosMaia==votosLula && votosMaia==votosBolsonaro){
+                document.write("Todos os candidatos empataram, haverá segundo turno!");
+        }else if(votosMaia == votosLula && votosMaia > votosBolsonaro){
+                document.write("Rodrigo Maia e Lula empataram, e disputarão o segundo turno!");
+        }else if(votosMaia == votosBolsonaro && votosMaia > votosLula){
+                document.write("Rodrigo Maia e Bolsonaro empataram, e disputarão o segundo turno!");
+        }else if(votosBolsonaro == votosLula && votosBolsonaro > votosMaia){
+                document.write("Bolsonaro e Lula empataram, e disputarão o segundo turno!");
+        }        
+
+        
+		
+	</script>
+</body>
+</html>

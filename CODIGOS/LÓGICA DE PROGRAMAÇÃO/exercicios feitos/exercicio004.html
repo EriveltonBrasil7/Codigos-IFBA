@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 004</title>
+	<meta charset="utf-8">
+</head>
+
+<h1>Tabuada!</h1>
+<input id="valor" type="number" max="10" min="1" >
+<button onclick="calcular()" >Calcular</button>
+<div id="textoTabuada">resultado da tabuada</div>
+
+<body>
+
+	<script> 
+		function calcular(){
+			var resultado = document.getElementById("valor").value;
+
+			var mensagem = "";
+			for(var i = 1; i <= 10; i++){
+				mensagem = mensagem + resultado +" X "+i+" = " +(resultado*i)+"<br>";
+			}
+			document.getElementById("textoTabuada").innerHTML = mensagem;
+		}
+
+
+	</script>
+
+
+</body>
+
+</html>

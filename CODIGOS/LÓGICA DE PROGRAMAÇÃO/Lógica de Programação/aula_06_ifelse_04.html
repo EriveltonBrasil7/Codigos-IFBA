@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		var medalhasBrasil=0, medalhasItalia=0, medalhasEua=0;
+
+		medalhasBrasil = parseInt(prompt("Digite a quantidade de medalhas do Brasil"));
+
+		medalhasItalia = parseInt(prompt("Digite a quantidade de medalhas da Itália"));
+
+		medalhasEua = parseInt(prompt("Digite a quantidade de medalhas dos EUA"));
+
+		if(medalhasBrasil > medalhasItalia && medalhasBrasil > medalhasEua){
+			alert("O Brasil possui a maior quantidade de medalhas!");
+		}else if(medalhasItalia > medalhasBrasil && medalhasItalia > medalhasEua){
+			alert("A Itália possui a maior quantidade de medalhas!");
+		}else if(medalhasEua > medalhasBrasil && medalhasEua > medalhasItalia){
+			alert("Os EUA possui a maior quantidade de medalhas!");
+		}else if(medalhasBrasil == medalhasEua && medalhasBrasil ==medalhasItalia){
+			alert("Todos possuem a mesma quantidade de medalhas!");
+		}else if(medalhasBrasil == medalhasItalia && medalhasBrasil > medalhasEua){
+			alert("Brasil e Itália são os maiores com a mesma quantidade de medalhas!");
+		}else if(medalhasBrasil == medalhasEua && medalhasBrasil > medalhasItalia){
+			alert("Brasil e EUA são os maiores com a mesma quantidade de medalhas!");
+		}else{
+			alert("EUA e Itália são os maiores com a mesma quantidade de medalhas!");
+		}
+
+		
+
+
+	</script>
+
+</body>
+</html>

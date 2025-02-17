@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 01</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+		var nomeDisciplina, nota1, nota2, nota3, media;
+
+		nomeDisciplina = prompt("Qual o nome da disciplina?");
+		nota1 = parseFloat(prompt("Qual o valor da primeira nota?"));
+		nota2 = parseFloat(prompt("Qual o valor da segunda nota?"));
+		nota3 = parseFloat(prompt("Qual o valor da terceira nota?"));
+
+		media = (nota1+nota2+nota3)/3;
+
+		alert("Sua média na disciplina "+nomeDisciplina+", foi "+media);
+
+		if(media >= 6){
+			alert("O aluno está aprovado!");
+			if(media == 10){
+				alert("Parabéns pela nota 10!");
+			}
+		}else{
+			alert("O aluno está reprovado!");
+			if(media < 3){
+				alert("O aluno NÃO tem direito a recuperação");
+			}else{
+				alert("O aluno tem direito a recuperação");
+			} 
+		}
+
+		
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercicio 001</title>
+	<meta charset="utf-8">
+</head>
+	<input type="SUBMIT" value="Enviar dados" onclick="validar();">
+<body>
+	<script>
+		function validar(){
+			if (document.cadastro.nome.value ==""){
+				window.alert("Você deve preencher o campo Nome.");
+				document.cadastro.nome.focus();
+				return false;
+			}if (document.cadastro.observacoes.value==""){
+			window.alert("VocÇe deve colocar alguma observação...");
+			document.cadastro.observacoes.focus();
+				return false;
+			}
+
+		}
+
+
+	</script>
+
+</body>
+</html>

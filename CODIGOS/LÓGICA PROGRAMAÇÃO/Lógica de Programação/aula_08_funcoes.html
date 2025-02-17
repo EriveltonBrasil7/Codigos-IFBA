@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Funções 01</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<script>
+		//Declarar/construir a função
+	    function calcularSalario(){
+	    	document.write("Salário: "+(954+50));    	
+	    }
+
+	    //Declarar/construir a função
+	    function calcularSalario2(salario, extra, noturno){
+	    	document.write("Salário: "+(salario+extra+noturno));  
+	    }
+
+	    //Declarar/construir a função
+	    function calcularSalario3(salario, extra, noturno){
+	    	var total = salario+extra+noturno;
+	    	return total;
+	    }
+
+	    //Declarar/construir a função
+	    function pularLinhas(){
+	    	document.write("<br>");
+	    	document.write("#################");
+	    	document.write("<br>");
+	    }
+
+
+	    document.write("Aqui não faz parte da função!<br>");
+	    calcularSalario(); //invocar a função
+	    pularLinhas();
+	    calcularSalario2(1000,80,20);
+	    pularLinhas();
+	    //var s = calcularSalario3(500,100,60);
+	    document.write("Salário: "+calcularSalario3(500,100,60));
+	    
+
+	</script>
+</body>
+</html>

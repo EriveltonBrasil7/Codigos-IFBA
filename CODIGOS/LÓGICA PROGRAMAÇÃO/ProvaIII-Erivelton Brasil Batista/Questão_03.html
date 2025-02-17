@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 03</title>
+	<meta charset="utf-8">
+</head>
+<h2>Sistema de Combustível</h2>
+Combustível:
+<select id="opcao">
+	<option value="gasolina">Gasolina</option>
+	<option value="alcool">Álcool</option>
+</select>
+<br>
+Quantidade(l):
+<input type="number" id="qtd">
+<br>
+<button onclick="calculo()">Calcular Total à Pagar</button>
+<br>
+<div id="exiba">TOTAL à Pagar: R$</div>
+
+<body>
+	<script>
+		function calculo(){
+			var opcaoEscolhida = document.getElementById("opcao").value;
+			var quantidade = document.getElementById("qtd").value;
+			quantidadeAlcool = quantidade * 3.45;
+			quantidadeGasolina= quantidade * 4.69;
+			quantidadeAlcool = parseFloat(quantidadeAlcool);
+			quantidadeGasolina = parseFloat(quantidadeGasolina);
+
+			if (opcaoEscolhida == "alcool" && quantidade <= 20) {
+				document.getElementById("exiba").innerHTML = "TOTAL à Pagar: R$"+(quantidadeAlcool-0.15);
+			}
+			else if(opcaoEscolhida == "alcool" && quantidade > 20){
+				document.getElementById("exiba").innerHTML = "TOTAL à Pagar: R$"+(quantidadeAlcool-0.25);
+			}
+			else if(opcaoEscolhida == "gasolina" && quantidade <= 20){
+				document.getElementById("exiba").innerHTML = "TOTAL à Pagar: R$"+(quantidadeGasolina-0.10);
+			}
+			else if(opcaoEscolhida == "gasolina" && quantidade > 20){
+				document.getElementById("exiba").innerHTML = "TOTAL à Pagar: R$"+(quantidadeGasolina-0.2);
+			}
+		}
+	</script>
+
+</body>
+</html>

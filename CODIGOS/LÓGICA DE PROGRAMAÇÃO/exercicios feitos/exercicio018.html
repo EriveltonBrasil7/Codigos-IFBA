@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 03</title>
+	<meta charset="utf-8">
+</head>
+<h1> Converter Unidades de Medidas</h1>
+
+Tipo de conversão:
+<select id="opcao">
+<option value="cm" >Centímetros para Metros</option>	
+<option value="m" >Metros para centímetros</option>	
+</select><br>
+valor:
+<input type="number" id="valor">
+<button onclick="converter()">Converter</button>
+<div id="exiba"> metros</div>
+
+<body>
+	<script>
+		function converter(){
+			var unidade = document.getElementById("valor").value;
+			unidade = parseFloat(unidade);
+			var opcaoEscolhida = document.getElementById("opcao").value;
+
+			if(opcaoEscolhida == "cm"){
+				document.getElementById("exiba").innerHTML = (unidade/100)+" metros";
+			}
+			else if(opcaoEscolhida == "m"){
+				document.getElementById("exiba").innerHTML = (unidade*100)+" centímetros";
+			}
+		}
+	</script>
+
+</body>
+</html>

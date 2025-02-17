@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Sistema de Análise de Dados</h1>
+De:
+<input type="number" id="de" >
+Até:
+<input type="number" id="ate" >
+<button onclick="converter();">analisar</button>
+<br><br>
+<div id="resultadoPar"> Soma dos Números Pares:</div>
+<div id="resultadoImpar">Soma dos Números ímpares:</div>
+<script>
+
+function converter(){ 
+	var de = parseInt(document.getElementById("de").value);
+	var ate = parseInt(document.getElementById("ate").value);
+	var somaPares = 0;
+	var somaImpares = 0;
+	for(;de<=ate;de ++){
+		if (de%2 ==0) {
+		somaPares = somaPares+de;
+		}else {
+			somaImpares = somaImpares+de;
+		}
+	}
+	//OUTRA FORMA DE USAR AS CONDIÇÕES NO FOR
+			// for(var i = de; i<=ate; i++){
+			// 	if(i%2 == 0){
+			// 		somaPares = somaPares+i;
+			// 	}else{
+			// 		somaImpares = somaImpares+i;
+			// 	}
+			// }
+			
+	document.getElementById("resultadoPar").innerHTML = "Soma dos números pares: "+somaPares;
+	document.getElementById("resultadoImpar").innerHTML = "Soma dos números impares: " +somaImpares;
+}
+
+</script>
+</body>
+</html>

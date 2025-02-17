@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+		<script>
+			var anoAtual, anoNascimento, idade;
+
+			anoAtual = parseInt(prompt("Digite o ano atual"));
+			anoNascimento = parseInt(prompt("Digite o ano de nascimento"));
+
+			idade = anoAtual-anoNascimento;
+
+			if(idade >= 18 && idade<=70){
+				alert("O seu voto é obrigatório!");
+			}else if(idade >= 16 || idade > 70){
+				alert("O seu voto é facultativo!");
+			}else if(idade < 16){
+				alert("O seu voto é proibido!");
+			}
+
+		</script>
+</body>
+</html>

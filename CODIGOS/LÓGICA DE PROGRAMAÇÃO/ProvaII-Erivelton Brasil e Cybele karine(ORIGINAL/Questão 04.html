@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+<h1>Sistema de Análise de Dados</h1>
+De:
+<input type="number" id="valor" >
+Até:
+<input type="number" id="soma" >
+<button onclick="converter();">analisar</button>
+<br><br>
+<div id="resultadopar"> Soma dos Números Pares:</div>
+<br>
+<div id="resultadoimpar">Soma dos Números ímpares:</div>
+<script>
+
+function converter(){
+	var calculo=a/2;
+	if (calculo%2=0) {
+		document.getElementById("resultadopar").innerHTML = calculo ++ ;
+		}
+		else if (calculo%2=1) {
+			document.getElementById("resultadoimpar").innerHTML = calculo ++ ;
+			
+		}
+	}
+}
+</script>
+</body>
+</html>

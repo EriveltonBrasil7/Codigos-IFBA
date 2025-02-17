@@ -1,0 +1,27 @@
+Classes básicas: (2,0)
+   - Herança (0,5)
+   - Composição/tipos (0,5)
+   - Métodos (0,5)
+   - Encapsulamento (0,5)
+
+Instanciação de objetos: (3,0)
+   - Preencheu correto (0,5)
+   - Preencheu herança correta (0,5)
+   - Preencheu composição correta (0,5)
+   - Listou correto (0,5)
+   - Listou Composição correta  (0,5)
+   - Usou bem os println  (0,5)
+
+
+Criação da tabela: (2,0)
+   - Criou a base de dados o nome correto (0,5)
+   - Criou todas as colunas corretamente (0,5)
+   - Definiu chave primaria, e autoincrement  em codigo ou id (0,5)
+   - Inseriu os registros  (0,5)
+
+
+Conexão JDBC: (3,0)
+   - Está criando a conexão com sucesso  (0,75)
+   - O resultset está trazendo as lihas do banco  (0,75)
+   - Está exibindo todas as colunas da tabelas endereco  (0,75)
+   - Usou uma estrutura de repetições (while ou for) para listar  (0,75)

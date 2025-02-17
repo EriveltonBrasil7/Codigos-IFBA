@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 5</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+		var nome = prompt("Digite seu nome");
+		var qtdDiarias = parseFloat(prompt("Digite a quantidade de diárias"));
+
+		var totalTaxas = 0;
+		if(qtdDiarias < 15){
+			totalTaxas = qtdDiarias * 5.5;
+		}else if(qtdDiarias == 15){
+			totalTaxas = qtdDiarias * 6.0;
+		}else if(qtdDiarias > 15 && qtdDiarias <= 20){
+			totalTaxas = qtdDiarias * 7;
+		}else if (qtdDiarias > 20 ){
+			totalTaxas = qtdDiarias * 7.5;
+		}
+
+		var totalGeral = (60*qtdDiarias) + totalTaxas;
+
+		alert(nome+", o total da sua estadia é: R$"+totalGeral);
+
+
+	</script>
+</body>
+</html>

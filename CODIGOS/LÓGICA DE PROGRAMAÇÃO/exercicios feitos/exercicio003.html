@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>exercicio 03</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+<h1 style="">Calcule o seu IMC</h1>
+Altura (ex.: 1.70)<br>
+<input id="altura" type="number" >
+<br><br>
+Peso (ex.: 86.5)<br>
+<input type="number" id="peso">
+<br><br>
+<button onclick="calcular()">Calcular</button>
+<br><br>
+<div id="resultado">Seu IMC: 0.00 </div>
+<img id="imagem" src="imc_01.png">
+
+	<script>
+		function calcular(){
+			var altura = document.getElementById("altura").value;
+			var peso = document.getElementById("peso").value;
+			var resultado = peso/(altura*altura);
+			document.getElementById("resultado").innerHTML = "Seu IMC: "+resultado;
+
+			if(resultado < 17){
+				document.getElementById("imagem").src ="imc_01.png";
+			}
+			else if (resultado >= 17 && resultado  <= 18.49) {
+				document.getElementById("imagem").src = "imc_02.png";
+			}
+			else if(resultado >= 18.5 && resultado <= 24.99){
+				document.getElementById("imagem").src = "imc_03.png";
+			}
+			else if(resultado >= 25 && resultado <= 29.99){
+				document.getElementById("imagem").src = "imc_04.png";
+			}
+			else if(resultado >= 30 && resultado <= 34.99){
+				document.getElementById("imagem").src = "imc_05.png";
+			}
+			else if(resultado >= 35 && resultado <= 39.99){
+				document.getElementById("imagem").src = "imc_06.png";
+			}
+			else if(resultado > 40){
+				document.getElementById("imagem").src = "imc_07.png";
+			}
+		}
+
+	</script>
+		
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 01</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+		var numero = parseInt(prompt("Digite qualquer número para que eu informa os 5 antecessores"));
+		document.write("Os 5 antecessores de "+numero+" são:");
+		
+		//PRIMEIRA OPÇÃO
+		// document.write("<br>");
+		// document.write(numero-1);
+		// document.write("<br>");
+		// document.write(numero-2);
+		// document.write("<br>");
+		// document.write(numero-3);
+		// document.write("<br>");
+		// document.write(numero-4);
+		// document.write("<br>");
+		// document.write(numero-5);
+
+		//OUTRA OPÇÃO
+		// document.write("<br>");
+		// numero = numero - 1;
+		// document.write(numero);
+		// document.write("<br>");
+		// numero = numero - 1;
+		// document.write(numero);
+		// document.write("<br>");
+		// numero = numero - 1;
+		// document.write(numero);
+		// document.write("<br>");
+		// numero = numero - 1;
+		// document.write(numero);
+		// document.write("<br>");
+		// numero = numero - 1;
+		// document.write(numero);
+
+		//OUTRA MELHOR OPCÃO
+		document.write("<br>");
+		document.write(--numero);
+		document.write("<br>");
+		document.write(--numero);
+		document.write("<br>");
+		document.write(--numero);
+		document.write("<br>");
+		document.write(--numero);
+		document.write("<br>");
+		document.write(--numero);
+	</script>
+</body>
+</html>

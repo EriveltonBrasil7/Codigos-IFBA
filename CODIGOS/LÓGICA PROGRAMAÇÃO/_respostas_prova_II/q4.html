@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 04</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h2>Sistema de Análises de Dados</h2>
+	De:
+	<input type="number" id="de">
+	Até:
+	<input type="number" id="ate">
+	<button onclick="analisarDados()">Analisar</button>
+	<div id="resultadoPar">Soma dos Números Pares: 0</div>
+	<div id="resultadoImpar">Soma dos Números Ímpares: 0</div>
+	<script>
+		
+		function analisarDados(){
+			var de = parseInt(document.getElementById("de").value);
+			var ate = parseInt(document.getElementById("ate").value);
+			var somaPares = 0;
+			var somaImpares = 0;
+			for(;de<=ate;de++){
+				if(de%2 == 0){
+					somaPares = somaPares+de;
+				}else{
+					somaImpares = somaImpares+de;
+				}
+			}
+
+			//OUTRA FORMA DE USAR AS CONDIÇÕES NO FOR
+			// for(var i = de; i<=ate; i++){
+			// 	if(i%2 == 0){
+			// 		somaPares = somaPares+i;
+			// 	}else{
+			// 		somaImpares = somaImpares+i;
+			// 	}
+			// }
+
+			document.getElementById("resultadoPar").innerHTML = "Soma dos Números Pares: " + somaPares;
+
+			document.getElementById("resultadoImpar").innerHTML = "Soma dos Números Ímpares: " + somaImpares;
+
+		}
+	</script>
+	
+</body>
+</html>

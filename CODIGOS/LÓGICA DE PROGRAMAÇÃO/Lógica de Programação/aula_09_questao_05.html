@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 05</title>
+	<meta charset="utf-8">
+</head>
+ <img  id="imagem" src="_imagens/lampada_apagada.jpg" onmouseover="trocarImagem()" onmouseout="voltarImagem() " onclick="quebrar()">
+ <br>
+ <button>Comprar outra lâmpada</button>
+<body>
+	<script>
+		function trocarImagem(){
+			document.getElementById("imagem").src = "_imagens/lampada_acesa.jpg";
+		}
+		function voltarImagem(){
+			document.getElementById("imagem"). src = "_imagens/lampada_apagada.jpg";
+		}
+		function quebrar(){
+			document.getElementById("imagem"). src = "_imagens/lampada_quebrada.jpg";
+		}
+
+	</script>
+
+</body>
+</html>

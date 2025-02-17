@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 3</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+		var nomeUsuario, anoNascimento, idade;
+
+		nomeUsuario = prompt("Qual o seu nome?");
+		alert("Seja bem-vindo(a) "+nomeUsuario+"!");
+
+		anoNascimento = prompt("Qual o ano do seu nascimento?");
+		idade = 2018 - anoNascimento;
+
+		if(idade > 60){
+			alert(idade+" anos, você está muito velho, "+nomeUsuario);
+		}else if(idade >=40 && idade<=60){
+			alert(idade+" anos, você está coroa, "+nomeUsuario);
+		}else{
+			alert(idade+" anos, você está jovem, "+nomeUsuario);
+		}
+
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 02</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h2>Sistema de Lanchonete</h2>
+	Produto:
+	<select id="produto">
+		<option value="001">Cód. 001 - Cachorro quente - R$ 1,20</option>
+		<option value="002">Cód. 002 - Bauru Simples - R$ 1,30</option>
+		<option value="003">Cód. 003 - Bauru com Ovo - R$ 1,50</option>
+		<option value="004">Cód. 004 - Hambúrguer - R$ 4,00</option>
+		<option value="005">Cód. 005 - Cheeseburguer - R$ 4,50</option>
+		<option value="006">Cód. 006 - Refrigerante - R$ 3,00</option>
+	</select>
+	<br><br>
+	Quantidade:
+	<input type="number" id="quantidade">
+	<br><br>
+	<button onclick="calcularTotal()">Calcular Total à Pagar</button>
+	<br><br>
+	<div id="resultado">TOTAL à Pagar: R$ 0,00</div>
+
+	<script>
+
+		function calcularTotal(){
+			var codProduto = document.getElementById("produto").value;
+			var quantidade = document.getElementById("quantidade").value;
+			var total = 0;
+			if(codProduto == "001"){
+				total = 1.2*quantidade;
+			}else if(codProduto == "002"){
+				total = 1.3*quantidade;
+			}else if(codProduto == "003"){
+				total = 1.5*quantidade;
+			}else if(codProduto == "004"){
+				total = 4*quantidade;
+			}else if(codProduto == "005"){
+				total = 4.5*quantidade;
+			}else if(codProduto == "006"){
+				total = 3*quantidade;
+			}
+			 
+			document.getElementById("resultado").innerHTML = "TOTAL à Pagar: R$ "+ total;
+		}
+		
+	</script>
+
+</body>
+</html>

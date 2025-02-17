@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+        <script>
+	/*
+        Escreva um algoritmo para ler o salário mensal de um funcionário e o percentual de reajuste. Com base nessas informações, o programa deve calcular e informar ao usuário o valor do novo salário. Um exemplo: Suponhamos que o usuário digitou o salário R$2000,00, e o percentual 10%, logo, programa deverá calcular e informar o novo salário de R$2200,00.  
+        */
+
+        var salarioAtual = parseFloat(prompt("Qual o valor do salário atual?"));
+        var percentual = parseFloat(prompt("Qual o percentual de reajuste?"));
+
+        /*** UMA FORMA de calcular ***/
+        // var valorAcrescido = (percentual/100) * salarioAtual;
+        // var novoSalario = valorAcrescido + salarioAtual;
+        // alert("Novo salário: R$ "+novoSalario);
+
+        /*** OUTRA FORMA de calcular ***/
+        //var novoSalario = ((percentual/100)*salarioAtual)+salarioAtual;
+        //alert("Novo salário: R$ "+novoSalario);
+
+        /*** OUTRA FORMA de calcular ***/
+        var valorAcrescido = (percentual/100)*salarioAtual;
+        var novoSalario = valorAcrescido + salarioAtual;
+        alert("Novo salário: R$ "+novoSalario);
+		
+	</script>
+</body>
+</html>

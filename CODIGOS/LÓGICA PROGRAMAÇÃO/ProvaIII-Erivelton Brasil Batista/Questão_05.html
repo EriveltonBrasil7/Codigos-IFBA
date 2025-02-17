@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 05</title>
+	<meta charset="utf-8">
+</head>
+<h2>Sistema Custos Maçãs</h2>
+Quantidade:<input type="number" id="valor">
+<br>
+<button onclick="calcular()">Somar</button>
+<div id="exiba">Total: R$ 0.00</div>
+
+<body>
+	<script>
+		function calcular(){
+			var qtd = document.getElementById("valor").value;
+			var totaMeia = qtd * 1.3;
+			var totalDuzia = qtd * 1;
+
+			if (qtd < 12) {
+				document.getElementById("exiba").innerHTML  = "Total: R$"+totaMeia;
+			}
+			else if(qtd >= 12){
+				document.getElementById("exiba").innerHTML  = "Total: R$"+totalDuzia;
+			}
+			else if(qtd == 0){
+				document.getElementById("exiba").innerHTML  = "Zero"
+			}
+		}
+	</script>
+</body>
+</html>

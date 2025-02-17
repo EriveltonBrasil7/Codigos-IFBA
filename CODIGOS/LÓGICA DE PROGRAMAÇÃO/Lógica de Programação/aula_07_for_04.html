@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 04</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<script>
+	var votosLula=0;
+	var votosBolsonaro=0;
+	var votosMaia=0;
+	var voto;
+	
+	for(var i =0; i < 2; i++){
+		    voto = parseInt(prompt("Digite para votar: 13-Lula, 11-Bolsonaro, 45-Maia:"));
+        if(voto == 13){
+           votosLula = votosLula + 1;
+        }else if(voto == 11){
+                votosBolsonaro = votosBolsonaro+1;
+        }else if(voto == 45){
+                votosMaia = votosMaia + 1;
+        }
+	}// Apuração dos votos, Resultado!!
+	document.write("Apuração dos resultados:<br>")
+	document.write("total de votos Lula: "+votosLula+"<br>")
+	document.write("total de votos Bolsonaro: "+votosBolsonaro+"<br>")
+	document.write("total de votos Maia: "+votosMaia+"<br>")
+	document.write("<br>total de votos: "+(votosMaia+votosLula+votosBolsonaro)+"<br>")
+
+
+	</script>
+
+</body>
+</html>

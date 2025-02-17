@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 04</title>
+	<meta charset="utf-8">
+</head>
+
+<img id="imagem" src="lampada-apagada.jpg" onclick="quebrar()" onmouseover="acender()" onmouseout="apagar()">
+
+<body>
+	<script>
+		function acender(){
+			document.getElementById("imagem").src = "lampada-acesa.jpg";
+		}
+		function apagar(){
+			document.getElementById("imagem").src = "lampada-apagada.jpg";
+		}
+		function quebrar(){
+			document.getElementById("imagem").src = "lampada-quebrada.jpg";
+		}
+
+
+	</script>
+</body>
+</html>

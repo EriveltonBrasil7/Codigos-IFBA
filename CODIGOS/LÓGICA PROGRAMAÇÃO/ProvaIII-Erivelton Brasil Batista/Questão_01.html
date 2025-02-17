@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 01</title>
+	<meta charset="utf-8">
+</head>
+
+<h1>Sistema de Análise Numérica</h1>
+Número:
+<input type="number" id="valor">
+<button onclick="calculo()">Analisar</button>
+<div id="exiba">resultado</div>
+
+<body>
+	<script>
+		function calculo(){
+			var valor = document.getElementById("valor").value;
+			if(valor < 0 && valor % 2 !== 0){
+				document.getElementById("exiba").innerHTML = "Negativo e Ímpar";
+			}
+			else if(valor < 0 && valor % 2 === 0){
+				document.getElementById("exiba").innerHTML = "Negativo e Par";
+			}
+			else if(valor > 0 && valor % 2 === 0 ){
+				document.getElementById("exiba").innerHTML = "Positivo e Par";
+			}
+			
+			else if(valor > 0 && valor  % 2 !== 0){
+				document.getElementById("exiba").innerHTML = "Positivo e Ímpar";
+			}
+			else if(valor == 0 ){
+				document.getElementById("exiba").innerHTML = "Zero";
+
+			}
+			
+
+		}
+
+	</script>
+
+
+</body>
+</html>

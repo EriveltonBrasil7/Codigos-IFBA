@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 010</title>
+	<meta charset="utf-8">
+</head>
+<h2>Calcule o seu IMC</h2>
+Digite aqui seu peso(Kg):<input type="number" id="peso">
+<br><br>
+Digite aqui sua altura(metros):<input type="number" id="altura">
+<br>
+<button onclick="calculorIMC()">Calcular</button>
+<div id="resultado">Seu IMC 0.00</div>
+<img id="imagem" src="imc_01.png">
+
+<body>
+
+	<script>
+		function calculorIMC(){
+			var altura = document.getElementById("altura").value;
+			var peso = document.getElementById("peso").value;
+			var resultado = peso/(altura*altura);
+			document.getElementById("resultado").innerHTML ="Seu IMC:"+resultado;
+			if (resultado <17){
+				document.getElementById("imagem").src = "imc_01.png"
+			}
+			else if (resultado >= 17 && resultado  <= 18.49) {
+				document.getElementById("imagem").src = "imc_02.png";
+			}
+			
+		}
+
+	</script>
+
+</body>
+</html>

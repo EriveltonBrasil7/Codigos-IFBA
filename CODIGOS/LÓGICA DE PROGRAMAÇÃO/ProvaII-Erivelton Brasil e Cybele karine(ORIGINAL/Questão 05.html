@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 05</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h2>Calcular o meu IMC Online</h2>
+	Tipo:
+	<select id="select">
+		<option value="cr">Criança</option>
+		<option value="ad">Adulto</option>
+	</select>
+	<br>
+	Altura: <input type="number" id="alt">
+	<br>
+	Peso: <input type="number" id="peso">
+	<br><br>
+	<button onclick="calcular()">Calcular IMC</button>
+	<br><br>
+	<div id="exibe"></div>
+
+	<script>
+		function calcular(){
+			var altura = parseFloat(document.getElementById('alt').value);
+			var peso = parseFloat(document.getElementById('peso').value);
+			var IMC = peso/(altura*altura);
+			var opcao = document.getElementById('select').value;
+
+		if (opcao == "ad"){
+			if (IMC <= 17) {
+				document.getElementById('exibe').innerHTML = 'Seu IMC: '+IMC+' - Muito Abaixo do Peso';
+			}else if(IMC >17 && IMC <=18.49){
+				document.getElementById('exibe').innerHTML = 'Seu IMC: '+IMC+' - Abaixo do Peso';
+			}else if(IMC >18.49){
+				document.getElementById('exibe').innerHTML = 'Seu IMC: '+IMC+' - Peso Normal';
+			}	
+		}else if(opcao == 'cr') {
+			if (IMC < 14.3) {
+				document.getElementById('exibe').innerHTML = 'Seu IMC: '+IMC+' - Normal';
+			}else if(IMC >= 14.3 && IMC <=16.1){
+				document.getElementById('exibe').innerHTML = 'Seu IMC: '+IMC+' - Sobrepeso';
+			}else if(IMC >16.1){
+				document.getElementById('exibe').innerHTML = 'Seu IMC: '+IMC+' - Obesidade';
+			}	
+		}
+	}
+	</script>
+</body>
+</html>

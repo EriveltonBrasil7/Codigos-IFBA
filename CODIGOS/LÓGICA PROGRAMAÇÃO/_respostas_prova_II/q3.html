@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 03</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Página de Login</h1>
+
+	<input type="text" id="usuario" placeholder="Usuário">
+	<br>
+	<input type="password" id="senha" placeholder="Senha">
+	<br>
+	<button onclick="verificarLogin()">ENTRAR</button>
+	<br><br>
+	<div id="mensagem"></div>
+
+	<script>
+		
+		function verificarLogin(){
+			var usuario = document.getElementById("usuario").value;
+			var senha = document.getElementById("senha").value;
+			var mensagem = "";
+			if(usuario == "eliomar.campos" && senha == "123"){
+				mensagem = "Seja Bem-vindo "+usuario+ "!";
+			}else if(usuario == "jose2015" && senha == "22jo"){
+				mensagem = "Seja Bem-vindo "+usuario+ "!";
+			}else if(usuario == "Mariagc" && senha == "2345"){
+				mensagem = "Seja Bem-vindo "+usuario+ "!";
+			}else{
+				mensagem = "Ops! Usuário ou Senha inválidos";
+			}
+
+			document.getElementById("mensagem").innerHTML = mensagem;
+
+		}
+	</script>
+</body>
+</html>

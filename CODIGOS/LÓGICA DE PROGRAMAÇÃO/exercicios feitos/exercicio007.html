@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 007</title>
+	<meta charset="utf-8">
+</head>
+<h1>Lâmpada</h1>
+
+<img id="imagem" src="lampada-apagada.jpg"  onmouseover="acender()" onmouseout="apagar()" onclick="quebrar()"><br><br>
+<button id="botao" onclick="apagar()" >Comprar lâmpada</button>
+<body>
+
+	<script>
+		function acender(){
+		document.getElementById("imagem").src = "lampada-acesa.jpg";
+
+		}	
+		function apagar(){
+			document.getElementById("imagem").src = "lampada-apagada.jpg";
+		}
+		function quebrar(){
+			document.getElementById("imagem").src = "lampada-quebrada.jpg";
+
+		}
+
+
+	</script>
+
+</body>
+</html>

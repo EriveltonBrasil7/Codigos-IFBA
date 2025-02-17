@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Funções 03</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<input type="number" name="valor" id="valor" value="1" min="1" max="10">
+	<button onclick="testarBotao()">Calcular Tabuada</button>
+	<div id="textoTabuada" style="color: red">conteúdo da DIV</div>
+
+	<script>
+		function testarBotao(){
+			var numeroCapturado = document.getElementById("valor").value;
+
+			document.getElementById("textoTabuada").innerHTML = numeroCapturado;
+		}
+
+
+	</script>
+</body>
+</html>

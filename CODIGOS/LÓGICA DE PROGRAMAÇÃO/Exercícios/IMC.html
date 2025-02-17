@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IMC</title>
+</head>
+<meta charset="utf-8">
+<body>
+	<script type="text/javascript">
+		var peso = parseFloat(prompt("Digite seu peso em KG!"));
+		var altura= parseFloat(prompt("Digite sua altura em metros!"));
+		var imc = peso / (altura*altura);
+		if (imc < 18.5){
+			alert("Seu IMC é "+imc+", Você está ABAIXO do peso idela!")
+		}else if(imc > 35){
+			alert("Seu IMC é "+imc+", Você está ACIMA do peso ideal!")
+		}else if(imc >= 18.5 || imc <= 35){
+			alert("Seu IMC é "+imc+", Você está com o peso ideal!")
+		}
+
+
+
+	</script>
+
+
+
+</body>
+</html>

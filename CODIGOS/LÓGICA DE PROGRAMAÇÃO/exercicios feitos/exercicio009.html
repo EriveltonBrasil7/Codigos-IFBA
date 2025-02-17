@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 009</title>
+	<meta charset="utf-8">
+</head>
+<h1>Converter Unidades de Medidas</h1>
+
+Tipo de conversão:
+<select id="opcao">
+<option value = "cm"> Converter em centímetros</option>
+<option value = "m"> Converter em metros</option>
+</select><br>
+
+valor:<input id="valor" type="number">
+<button onclick="converter()">Converter</button>
+<div id="resultado">0.00 metros</div>
+
+<body>
+	<script>
+		function converter(){
+			var valor = document.getElementById("valor").value;
+			valor = parseFloat(valor);
+			var opcaoEscolhida =  document.getElementById("opcao").value;
+			var resultado = 0;
+			var msn = " Metros";
+			if (opcaoEscolhida == "cm") {
+				resultado = valor/100;
+			}else{
+				resultado = valor*100;
+				msn = " Centímetros";
+			}
+			document.getElementById("resultado").innerHTML = resultado + msn;
+		}
+		
+	</script>
+
+</body>
+</html>

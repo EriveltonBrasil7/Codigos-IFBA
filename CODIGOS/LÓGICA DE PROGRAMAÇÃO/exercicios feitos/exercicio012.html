@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 01</title>
+	<meta charset="utf-8">
+</head>
+<br><br>
+Digite um valor entre 1 e 10:<input type="number" id="valor" max="10" min="1">
+<button onclick="tabuada()" >Calcular</button>
+<div id="exiba">resultado</div>
+
+<body>
+	<script>
+			function tabuada(){
+				var numeroUsuario = document.getElementById("valor").value;
+				var mensagem = "";
+				for (var i = 1; i <= 10; i++){
+					mensagem = mensagem + numeroUsuario +" X "+ i +" = "+(numeroUsuario*i)+"<br>";
+
+				}
+				document.getElementById("exiba").innerHTML = mensagem;
+			}
+	</script>
+
+
+
+</body>
+</html>

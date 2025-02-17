@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Diarias</title>
+</head>
+<body>
+	<script>
+	var nome, numDiaria
+	nome = prompt("Qual o seu nome?");
+	numDiaria = parseFloat(prompt("Quantos dias irá se hospedar?"));
+	
+	var servicopri = parseFloat(numDiaria*5.50+60)
+	var servicoseg	= parseFloat(numDiaria*6.00+60)
+	var servicoter = parseFloat(numDiaria*7.00+60)
+	var servicoquarto = parseFloat(numDiaria*7.50+60)
+	
+
+	if(servicopri <15){
+		alert(nome+ " vai pagar de hospedagem R$"+servicopri);
+
+	}else if(servicoseg == 15){
+		alert(nome+" vai pagar de hospedagem R$"+servicoseg);
+
+	}else if(servicoter >15 && servicoter <= 20){
+
+		alert(nome+" vai pagar de hospedagem R$"+servicoter);
+
+	}else if(servicoquarto > 20){
+
+		alert(nome+" vai pagar de hospedagem R$"+servicoquarto);
+	}
+	
+	
+
+
+	</script>
+</body>
+</html>

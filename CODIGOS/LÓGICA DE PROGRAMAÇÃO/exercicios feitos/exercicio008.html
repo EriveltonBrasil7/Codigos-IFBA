@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 008</title>
+	<meta charset="utf-8">
+</head>
+<h1>Converter Unidades de Medidas</h1>
+Valor:<input type="number" id="valor">
+<button onclick="converterValor()">Resultado na DIV</button>
+<button onclick="mensagem()">Resultado no Alert</button>
+<div id="calculo" >0.00 Metros</div>
+
+<body>
+	<script>
+		function converterValor(){
+		var calculo = document.getElementById("valor").value;
+		calculo = parseFloat(calculo);
+		calculo = calculo/100;
+		document.getElementById("calculo").innerHTML = calculo+" metros";
+		}
+		function mensagem(){
+			var calculo = document.getElementById("valor").value;
+				alert(calculo+" Metros!!")
+		}
+
+	</script>
+
+</body>
+</html>

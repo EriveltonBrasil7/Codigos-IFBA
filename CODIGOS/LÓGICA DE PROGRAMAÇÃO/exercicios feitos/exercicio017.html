@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 02</title>
+	<meta charset="utf-8">
+</head>
+<h1> Converter Unidades de Medidas</h1><br>
+Valor:<input type="number" id="valor">
+<button onclick="converter()">Resultado na DIV</button>
+<button onclick="mensagem()"> Resultado no Alert</button>
+<div id="exiba" >conversão </div>
+
+<body>
+
+	<script>
+		function converter(){
+			var unidade = document.getElementById("valor").value;
+			unidade = parseFloat(unidade);
+			unidade = unidade/100;
+			document.getElementById("exiba").innerHTML = unidade+" metros";
+		}
+		function mensagem(){
+			var unidade = document.getElementById("valor").value;
+			unidade = parseFloat(unidade);
+			unidade = unidade/100;
+			alert("Esse é o valor da conversã: "+unidade+" metros.");
+		}
+
+	</script>
+
+</body>
+</html>

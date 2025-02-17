@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 01</title>
+	<meta charset="utf-8">
+</head>
+	<h1>Sistema Olímpiadas de Natação</h1>
+
+	Ano Nascimento: 
+	<input id="valor" type="number" >
+
+	<button id="botao" onclick="categoria()">Verificar Categoria</button>
+	<br><br>
+	<div id="ano">anos</div>
+
+<body>
+	<script>
+		function categoria(){
+		var anoNascimento = document.getElementById("valor").value;
+		var resultado = 2018-anoNascimento;
+			if(resultado <= 7){
+				document.getElementById("ano").innerHTML = resultado +" anos: Infantil A = até 7 anos";
+			}
+			else if(resultado >= 8 && resultado <= 10){
+				document.getElementById("ano").innerHTML = resultado +" anos: Infantil B = 8-10 anos";
+			}
+			else if(resultado >= 11 && resultado <= 13){
+				document.getElementById("ano").innerHTML = resultado +" anos: Juvenil A = 11-13 anos";
+			}
+			else if (resultado >= 14 && resultado <= 17){
+				document.getElementById("ano").innerHTML = resultado +" anos: Juvenil B = 14-17 anos";
+			}
+			else if(resultado >= 18){
+				document.getElementById("ano").innerHTML = resultado +" anos: Adulto = maiores de 18 anos";
+			}
+
+		}
+	</script>
+</body>
+
+</html>

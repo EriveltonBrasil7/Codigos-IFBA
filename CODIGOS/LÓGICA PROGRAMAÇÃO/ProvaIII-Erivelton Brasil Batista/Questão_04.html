@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questão 04</title>
+	<meta charset="utf-8">
+</head>
+<h2>Sistema Somar Maiores</h2>
+Número A<input type="number" id="numero1">
+<br>
+Número B<input type="number" id="numero2">
+<br>
+Número C<input type="number" id="numero3">
+<br>
+<button onclick="calcular()">Somar</button>
+<div id="exiba"> soma:0</div>
+
+<body>
+	<script>
+		function calcular(){
+			var valor1 = document.getElementById("numero1").value;
+			var valor2 = document.getElementById("numero2").value;
+			var valor3 = document.getElementById("numero3").value;
+			var total = (valor1+valor2+valor3);
+			document.getElementById("exiba").innerHTML = "Soma: "+total;
+		}
+	</script>
+
+</body>
+</html>
